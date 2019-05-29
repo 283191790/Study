@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp" >
+
+    <EditText
+        android:id="@+id/User"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:drawableLeft="@drawable/user"
+        android:drawablePadding="5dp"
+        android:hint="用户名"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="50dp"
+        android:textColor="#FFAD30"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/User"
+        android:layout_marginTop="44dp"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="5dp"
+        android:hint="密码"
+        android:lines="1"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textColor="#FFAD30"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:maxLines="1"/>
+
+    <Button
+        android:id="@+id/accountLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Password"
+        android:layout_marginTop="70dp"
+        android:text="登录"
+        android:textSize="22sp"
+        android:background="#FFAD33"/>
+
+
+</RelativeLayout>
+
