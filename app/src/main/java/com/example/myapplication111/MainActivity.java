@@ -9,38 +9,54 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private Button btn_enter;
-    private Button btn_button;
-    private Button btn_login;
+    private Button btnenter;
+    private Button btnbutton;
+    private Button btnlogin;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        btn_enter = findViewById(R.id.btn_enter);
-        btn_enter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        btnenter = findViewById(R.id.btn_enter);
+        btnbutton = findViewById(R.id.btn_button);
+        btnlogin = findViewById(R.id.btn_login);
+        setListeners();
 
-                Intent intent = new Intent(MainActivity.this,SecondActivity.class);
-                    startActivity(intent);
-                }
-            });
-        btn_button = findViewById(R.id.btn_button);
-        btn_button.setOnClickListener(new View.OnClickListener() {
+        btnbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this,"点击按钮",Toast.LENGTH_SHORT).show();
             }
         });
-        btn_login = findViewById(R.id.btn_login);
-        btn_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
     }
+    private void setListeners(){
+        OnClick onClick = new OnClick();
+        btnenter.setOnClickListener(onClick);
+        btnlogin.setOnClickListener(onClick);
+
+
+     }
+
+    private class OnClick implements View.OnClickListener{
+
+        @Override
+        public void onClick(View v) {
+            Intent intent = null;
+            switch (v.getId()){
+                case R.id.btn_enter:
+                    intent = new Intent(MainActivity.this,SecondActivity.class);
+                    break;
+                case R.id.btn_login:
+                    intent = new Intent(MainActivity.this, LoginActivity.class);
+                    break;
+            }
+            startActivity(intent);
+        }
+    }
+
+
+
+
 }
