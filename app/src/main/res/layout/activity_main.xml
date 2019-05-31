@@ -39,8 +39,19 @@
         android:text="Radio Button"
         android:textAllCaps="false"
         android:textSize="22sp"
-        android:id="@+id/btn_radio"
+        android:id="@+id/btn_checkbox"
         android:layout_below="@+id/btn_login"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ImageView"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:id="@+id/btn_imageview"
+        android:layout_below="@+id/btn_checkbox"
         android:layout_marginTop="10dp"
         />
 

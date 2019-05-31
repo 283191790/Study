@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textname"
+        android:text="你的兴趣爱好:"
+        android:textSize="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#010203"/>
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox1"
+        android:text="唱"
+        android:textSize="20sp"
+        android:layout_below="@+id/textname"
+        android:button="@drawable/checkbox"
+        android:paddingLeft="15dp"
+
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox2"
+        android:text="跳"
+        android:textSize="20sp"
+        android:layout_below="@+id/checkbox1"
+        android:button="@drawable/checkbox"
+        android:paddingLeft="15dp"
+
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox3"
+        android:text="RAP"
+        android:textSize="20sp"
+        android:layout_below="@+id/checkbox2"
+        android:button="@drawable/checkbox"
+        android:paddingLeft="15dp"
+
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkbox4"
+        android:text="蓝球"
+        android:textSize="20sp"
+        android:layout_below="@+id/checkbox3"
+        android:button="@drawable/checkbox"
+        android:paddingLeft="15dp"
+
+        />
+
+
+
+
+</RelativeLayout>

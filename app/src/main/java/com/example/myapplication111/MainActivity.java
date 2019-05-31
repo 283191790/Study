@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
     private Button btnenter;
     private Button btnbutton;
     private Button btnlogin;
+    private Button btnCheckbox;
+    private Button btnImageView;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
         btnenter = findViewById(R.id.btn_enter);
         btnbutton = findViewById(R.id.btn_button);
         btnlogin = findViewById(R.id.btn_login);
+        btnCheckbox = findViewById(R.id.btn_checkbox);
+        btnImageView = findViewById(R.id.btn_imageview);
         setListeners();
 
         btnbutton.setOnClickListener(new View.OnClickListener() {
@@ -35,6 +40,8 @@ public class MainActivity extends AppCompatActivity {
         OnClick onClick = new OnClick();
         btnenter.setOnClickListener(onClick);
         btnlogin.setOnClickListener(onClick);
+        btnCheckbox.setOnClickListener(onClick);
+        btnImageView.setOnClickListener(onClick);
 
 
      }
@@ -50,6 +57,12 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_login:
                     intent = new Intent(MainActivity.this, LoginActivity.class);
+                    break;
+                case R.id.btn_checkbox:
+                    intent = new Intent(MainActivity.this, CheckBoxActivity.class);
+                    break;
+                case R.id.btn_imageview:
+                    intent = new Intent(MainActivity.this, ImageViewActivity.class);
                     break;
             }
             startActivity(intent);
