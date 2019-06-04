@@ -3,10 +3,13 @@ package com.example.myapplication111;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.myapplication111.recycleview.RecyclerviewActivity;
 
 public class MainActivity extends AppCompatActivity {
     private Button btnenter;
@@ -14,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnlogin;
     private Button btnCheckbox;
     private Button btnImageView;
+    private Button btnRecyclerView;
 
 
     @Override
@@ -25,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         btnlogin = findViewById(R.id.btn_login);
         btnCheckbox = findViewById(R.id.btn_checkbox);
         btnImageView = findViewById(R.id.btn_imageview);
+        btnRecyclerView = findViewById(R.id.btn_recyclerview);
         setListeners();
 
         btnbutton.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         btnlogin.setOnClickListener(onClick);
         btnCheckbox.setOnClickListener(onClick);
         btnImageView.setOnClickListener(onClick);
+        btnRecyclerView.setOnClickListener(onClick);
 
 
      }
@@ -63,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_imageview:
                     intent = new Intent(MainActivity.this, ImageViewActivity.class);
+                    break;
+                case R.id.btn_recyclerview:
+                    intent = new Intent(MainActivity.this,RecyclerviewActivity.class);
                     break;
             }
             startActivity(intent);

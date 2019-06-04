@@ -21,7 +21,7 @@ public class CheckBoxActivity extends AppCompatActivity {
         Cb1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                Toast.makeText(CheckBoxActivity.this,isChecked?"1选中":"1未选中",Toast.LENGTH_SHORT).show();
+                Toast.makeText(CheckBoxActivity.this,isChecked?"鸡你太美":"1未选中",Toast.LENGTH_SHORT).show();
             }
         });
         Cb2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

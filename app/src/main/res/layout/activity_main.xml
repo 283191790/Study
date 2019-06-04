@@ -54,6 +54,16 @@
         android:layout_below="@+id/btn_checkbox"
         android:layout_marginTop="10dp"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recycler View"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:id="@+id/btn_recyclerview"
+        android:layout_below="@+id/btn_imageview"
+        android:layout_marginTop="10dp"
+        />
 
 
 
