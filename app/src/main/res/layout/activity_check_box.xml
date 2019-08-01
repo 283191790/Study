@@ -20,7 +20,7 @@
         android:text="唱"
         android:textSize="20sp"
         android:layout_below="@+id/textname"
-        android:button="@drawable/checkbox"
+        android:button="@drawable/bg_checkbox"
         android:paddingLeft="15dp"
 
         />
@@ -31,7 +31,7 @@
         android:text="跳"
         android:textSize="20sp"
         android:layout_below="@+id/checkbox1"
-        android:button="@drawable/checkbox"
+        android:button="@drawable/bg_checkbox"
         android:paddingLeft="15dp"
 
         />
@@ -42,7 +42,7 @@
         android:text="RAP"
         android:textSize="20sp"
         android:layout_below="@+id/checkbox2"
-        android:button="@drawable/checkbox"
+        android:button="@drawable/bg_checkbox"
         android:paddingLeft="15dp"
 
         />
@@ -53,7 +53,7 @@
         android:text="蓝球"
         android:textSize="20sp"
         android:layout_below="@+id/checkbox3"
-        android:button="@drawable/checkbox"
+        android:button="@drawable/bg_checkbox"
         android:paddingLeft="15dp"
 
         />
