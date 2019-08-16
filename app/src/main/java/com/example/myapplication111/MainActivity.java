@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnCheckbox;
     private Button btnImageView;
     private Button btnRecyclerView;
+    private Button btnWebview;
 
 
     @Override
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         btnCheckbox = findViewById(R.id.btn_checkbox);
         btnImageView = findViewById(R.id.btn_imageview);
         btnRecyclerView = findViewById(R.id.btn_recyclerview);
+        btnWebview = findViewById(R.id.btn_webview);
         setListeners();
 
         btnbutton.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +50,7 @@ public class MainActivity extends AppCompatActivity {
         btnCheckbox.setOnClickListener(onClick);
         btnImageView.setOnClickListener(onClick);
         btnRecyclerView.setOnClickListener(onClick);
+        btnWebview.setOnClickListener(onClick);
 
 
      }
@@ -72,6 +75,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_recyclerview:
                     intent = new Intent(MainActivity.this,RecyclerviewActivity.class);
+                    break;
+                case R.id.btn_webview:
+                    intent = new Intent(MainActivity.this,WebviewActivity.class);
                     break;
             }
             startActivity(intent);

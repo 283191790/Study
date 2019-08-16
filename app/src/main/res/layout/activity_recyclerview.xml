@@ -20,5 +20,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/btn_grid"
         android:text="网格视图"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_pu"
+        android:text="瀑布流"/>
 
 </LinearLayout>

@@ -10,7 +10,7 @@ import com.example.myapplication111.R;
 
 public class RecyclerviewActivity extends AppCompatActivity {
 
-    private Button mBtnLinear,mBtnHor,mBtnGrid;
+    private Button mBtnLinear,mBtnHor,mBtnGrid,mBtnPu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +19,7 @@ public class RecyclerviewActivity extends AppCompatActivity {
         mBtnLinear = findViewById(R.id.btn_linear);
         mBtnHor = findViewById(R.id.btn_hor);
         mBtnGrid = findViewById(R.id.btn_grid);
+        mBtnPu = findViewById(R.id.btn_pu);
         mBtnLinear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -37,6 +38,13 @@ public class RecyclerviewActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(RecyclerviewActivity.this,GridRecyclerViewActivity.class);
+                startActivity(intent);
+            }
+        });
+        mBtnPu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(RecyclerviewActivity.this,PuRecyclerViewActivity.class);
                 startActivity(intent);
             }
         });

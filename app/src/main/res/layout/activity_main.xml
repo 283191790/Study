@@ -8,8 +8,8 @@
     tools:context=".MainActivity">
 
     <Button
-        android:layout_width="339dp"
-        android:layout_height="65dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="enter"
         android:id="@+id/btn_enter"
         android:layout_marginTop="20dp"/>
@@ -62,6 +62,16 @@
         android:textSize="22sp"
         android:id="@+id/btn_recyclerview"
         android:layout_below="@+id/btn_imageview"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WebView"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:id="@+id/btn_webview"
+        android:layout_below="@+id/btn_recyclerview"
         android:layout_marginTop="10dp"
         />
 
