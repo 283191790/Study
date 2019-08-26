@@ -3,8 +3,6 @@ package com.example.myapplication111;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -19,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btnImageView;
     private Button btnRecyclerView;
     private Button btnWebview;
+    private Button btnToast;
 
 
     @Override
@@ -32,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         btnImageView = findViewById(R.id.btn_imageview);
         btnRecyclerView = findViewById(R.id.btn_recyclerview);
         btnWebview = findViewById(R.id.btn_webview);
+        btnToast = findViewById(R.id.btn_toast);
         setListeners();
 
         btnbutton.setOnClickListener(new View.OnClickListener() {
@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
         btnImageView.setOnClickListener(onClick);
         btnRecyclerView.setOnClickListener(onClick);
         btnWebview.setOnClickListener(onClick);
+        btnToast.setOnClickListener(onClick);
 
 
      }
@@ -78,6 +79,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_webview:
                     intent = new Intent(MainActivity.this,WebviewActivity.class);
+                    break;
+                case R.id.btn_toast:
+                    intent = new Intent(MainActivity.this,ToastActivity.class);
                     break;
             }
             startActivity(intent);
