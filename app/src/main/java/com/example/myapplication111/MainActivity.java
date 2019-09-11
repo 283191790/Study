@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.myapplication111.fragment.ContalnerActivity;
 import com.example.myapplication111.recycleview.RecyclerviewActivity;
 
 public class MainActivity extends AppCompatActivity {
@@ -18,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     private Button btnRecyclerView;
     private Button btnWebview;
     private Button btnToast;
+    private Button btnFragment;
+
 
 
     @Override
@@ -32,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         btnRecyclerView = findViewById(R.id.btn_recyclerview);
         btnWebview = findViewById(R.id.btn_webview);
         btnToast = findViewById(R.id.btn_toast);
+        btnFragment = findViewById(R.id.btn_fragment);
         setListeners();
 
         btnbutton.setOnClickListener(new View.OnClickListener() {
@@ -52,6 +56,7 @@ public class MainActivity extends AppCompatActivity {
         btnRecyclerView.setOnClickListener(onClick);
         btnWebview.setOnClickListener(onClick);
         btnToast.setOnClickListener(onClick);
+        btnFragment.setOnClickListener(onClick);
 
 
      }
@@ -82,6 +87,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_toast:
                     intent = new Intent(MainActivity.this,ToastActivity.class);
+                    break;
+                case R.id.btn_fragment:
+                    intent = new Intent(MainActivity.this, ContalnerActivity.class);
                     break;
             }
             startActivity(intent);

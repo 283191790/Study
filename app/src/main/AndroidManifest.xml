@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ToastActivity"></activity>
+        <activity android:name=".fragment.ContalnerActivity"></activity>
+        <activity android:name=".ToastActivity" />
         <activity android:name=".WebviewActivity" />
         <activity android:name=".recycleview.PuRecyclerViewActivity" />
         <activity android:name=".recycleview.GridRecyclerViewActivity" />

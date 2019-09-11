@@ -2,9 +2,12 @@ package com.example.myapplication111;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.myapplication111.util.ToastUtil;
 
 public class ToastActivity extends AppCompatActivity {
 
@@ -32,8 +35,13 @@ public class ToastActivity extends AppCompatActivity {
 
                     break;
                 case R.id.btn_toast_2:
+                    Toast toastCenter = Toast.makeText(getApplicationContext(),"居中Toast",Toast.LENGTH_LONG);
+                    toastCenter.setGravity(Gravity.CENTER,0,0);
+                    toastCenter.show();
                     break;
                 case R.id.btn_toast_3:
+                    ToastUtil.showMsg(getApplicationContext(),"包装Toast");
+
                     break;
             }
 
